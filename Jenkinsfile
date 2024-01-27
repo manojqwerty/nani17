@@ -19,5 +19,23 @@ pipeline {
                 sh 'mvn clean'
             }
         }
+         stage('Compile') {
+            steps {
+                // Execute your Maven commands within the Docker container
+                sh 'mvn compile'
+            }
+        }
+         stage('Test') {
+            steps {
+                // Execute your Maven commands within the Docker container
+                sh 'mvn test'
+            }
+        }
+         stage('Package') {
+            steps {
+                // Execute your Maven commands within the Docker container
+                sh 'mvn package'
+            }
+        }
     }
 }
