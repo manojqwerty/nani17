@@ -1,7 +1,7 @@
 pipeline {
     agent {
         docker {
-            image 'manojreddy12/docker:v1.9'
+            image 'manojreddy12/maven:v1.0'
             args '-v /var/run/docker.sock:/var/run/docker.sock'
         }
     }
