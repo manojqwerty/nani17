@@ -37,11 +37,5 @@ pipeline {
                 sh 'mvn package'
             }
         }
-        stage('Docker') {
-            steps {
-                // Execute your Maven commands within the Docker container
-                sh 'docker images'
-            }
-        }
     }
 }
