@@ -1,10 +1,10 @@
 pipeline {
-    agent {
-        docker {
-            image 'manojreddy12/maven:v1.0'
+    agent any
+        //docker {
+            //image 'manojreddy12/maven:v1.0'
             //args '-v /var/run/docker.sock:/var/run/docker.sock'
-        }
-    }
+        }//
+    
     stages {
         stage('mvn version') {
             steps {
